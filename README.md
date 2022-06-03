@@ -33,7 +33,9 @@ userInfo.RoleClaimType = "role";
 
 ## CSP problems
 
-see issue: https://github.com/dotnet/aspnetcore/issues/42007
+see issues: https://github.com/dotnet/aspnetcore/issues/42007
+
+https://developercommunity.visualstudio.com/t/browserlink-CSP-support-NET-7/10061464?entry=problem
 
 CSP definition
 
