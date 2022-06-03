@@ -51,6 +51,10 @@ frame-ancestors 'none'
 
 https://github.com/damienbod/AspNetCoreOpeniddict/tree/main/OpeniddictServer
 
+## Created using the following template
+
+https://github.com/damienbod/Blazor.BFF.OpenIDConnect.Template
+
 ## Links:
 
 https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-7-preview-3/
