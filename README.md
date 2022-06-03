@@ -54,3 +54,5 @@ https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-7-preview-3
 https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-3/
 
 https://github.com/dotnet/aspnetcore/issues/39504
+
+https://dotnet.microsoft.com/en-us/download/dotnet/7.0
