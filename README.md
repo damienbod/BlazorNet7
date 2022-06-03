@@ -6,6 +6,8 @@ Blazor Hosted application with CSP protection.
 
 BFF security architecture used with standard OpenID Connect authentication (confidential client code flow with PKCE)
 
+Will working against any OpenID Connect server, only default packages used.
+
 ## Update from .NET 6 => 7 breaking changes
 
 All packages were updated to use the latest preview version
