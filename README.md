@@ -47,6 +47,10 @@ font-src 'self'; base-uri 'self';
 frame-ancestors 'none'
 ```
 
+## Test OIDC server
+
+https://github.com/damienbod/AspNetCoreOpeniddict/tree/main/OpeniddictServer
+
 ## Links:
 
 https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-dotnet-7-preview-3/
