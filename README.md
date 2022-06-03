@@ -10,6 +10,8 @@ BFF security architecture used with standard OpenID Connect authentication (conf
 
 All packages were updated to use the latest preview version
 
+claims definitions now using magic namespaces in .NET 7.
+
 ```csharp
 userInfo.NameClaimType = "name";
 userInfo.RoleClaimType = "role";
