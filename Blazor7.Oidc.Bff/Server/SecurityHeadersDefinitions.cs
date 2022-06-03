@@ -26,7 +26,8 @@ public static class SecurityHeadersDefinitions
                 // due to Blazor
                 builder.AddScriptSrc()
                     .Self()
-                    .WithHash256("v8v3RKRPmN4odZ1CWM5gw80QKPCCWMcpNeOmimNL2AA=")
+                    .WithNonce()
+                    .WithHash256("ZD0chCyBaNHl+4UwQHJIHGoYhKwMeyCXGgJTKW5/67E=")
                     .UnsafeEval();
 
                 // disable script and style CSP protection if using Blazor hot reload
