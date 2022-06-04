@@ -32,6 +32,7 @@ public class UserController : ControllerBase
         userInfo.RoleClaimType = "role";
 
         // breaking change .NET 7
+        // Name claim definitions now using no namespace in .NET 7.
         //if (claimsPrincipal?.Identity is ClaimsIdentity claimsIdentity)
         //{
         //    userInfo.NameClaimType = claimsIdentity.NameClaimType;
