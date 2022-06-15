@@ -12,7 +12,7 @@ Will working against any OpenID Connect server, only default packages used.
 
 All packages were updated to use the latest preview version
 
-claims definitions now using magic namespaces in .NET 7.
+Name claim definition now using no namespace in .NET 7.
 
 ```csharp
 userInfo.NameClaimType = "name";
