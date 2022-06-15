@@ -68,3 +68,5 @@ https://github.com/dotnet/aspnetcore/issues/39504
 https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
 https://docs.microsoft.com/en-us/dotnet/core/compatibility/7.0
+
+https://devblogs.microsoft.com/visualstudio/introducing-private-preview-port-tunneling-visual-studio-for-asp-net-core-projects/
