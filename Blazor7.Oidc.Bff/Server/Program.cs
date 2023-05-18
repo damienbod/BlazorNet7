@@ -73,12 +73,12 @@ else
     app.UseExceptionHandler("/Error");
 }
 
-//var idpHost = configuration["OpenIDConnectSettings:Authority"];
-//if(idpHost != null)
-//{
-//    app.UseSecurityHeaders(SecurityHeadersDefinitions
-//        .GetHeaderPolicyCollection(env.IsDevelopment(), idpHost));
-//}
+var idpHost = configuration["OpenIDConnectSettings:Authority"];
+if (idpHost != null)
+{
+    app.UseSecurityHeaders(SecurityHeadersDefinitions
+        .GetHeaderPolicyCollection(env.IsDevelopment(), idpHost));
+}
 
 app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
