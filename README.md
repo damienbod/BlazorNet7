@@ -31,7 +31,7 @@ userInfo.RoleClaimType = "role";
 //}
 ```
 
-## CSP problems
+## CSP problems (FIXED is latest VS preview 2023-05-18)
 
 see issues: https://github.com/dotnet/aspnetcore/issues/42007
 
