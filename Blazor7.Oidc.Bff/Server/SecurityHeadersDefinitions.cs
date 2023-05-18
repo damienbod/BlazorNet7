@@ -27,7 +27,7 @@ public static class SecurityHeadersDefinitions
                 builder.AddScriptSrc()
                     .Self()
                     .WithHash256("ZD0chCyBaNHl+4UwQHJIHGoYhKwMeyCXGgJTKW5/67E=")
-                    .UnsafeEval();
+                    .WasmUnsafeEval();
             })
             .RemoveServerHeader()
             .AddPermissionsPolicy(builder =>
