@@ -12,10 +12,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.0-preview.5.22303.8" />
-		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.0-preview.5.22303.8" NoWarn="NU1605" />
-		<PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders" Version="0.16.1" />
-		<PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders.TagHelpers" Version="0.16.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.5" NoWarn="NU1605" />
+		<PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders" Version="0.18.0" />
+		<PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders.TagHelpers" Version="0.18.0" />
 	</ItemGroup>
 
 </Project>

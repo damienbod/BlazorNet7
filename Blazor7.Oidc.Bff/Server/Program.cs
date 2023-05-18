@@ -3,7 +3,9 @@ using Blazor7.Bff.Server.Services;
 
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -59,9 +61,6 @@ services.AddRazorPages().AddMvcOptions(options =>
     //options.Filters.Add(new AuthorizeFilter(policy));
 });
 
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
-
 var app = builder.Build();
 
 if (env.IsDevelopment())
@@ -74,9 +73,12 @@ else
     app.UseExceptionHandler("/Error");
 }
 
-app.UseSecurityHeaders(
-    SecurityHeadersDefinitions.GetHeaderPolicyCollection(env.IsDevelopment(),
-        configuration["OpenIDConnectSettings:Authority"]));
+//var idpHost = configuration["OpenIDConnectSettings:Authority"];
+//if(idpHost != null)
+//{
+//    app.UseSecurityHeaders(SecurityHeadersDefinitions
+//        .GetHeaderPolicyCollection(env.IsDevelopment(), idpHost));
+//}
 
 app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
