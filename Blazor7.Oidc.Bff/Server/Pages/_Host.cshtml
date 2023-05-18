@@ -1,10 +1,7 @@
 ﻿@page "/"
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @namespace Blazor7.Bff.Pages
 @using Blazor7.Bff.Client
-@using NetEscapades.AspNetCore.SecurityHeaders
 @{
-    var nonce = HttpContext.GetNonce();
     Layout = null;
 }
 
@@ -15,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Blazor OpenIDConnect Cookie</title>
     <base href="~/" />
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"  nonce="@nonce" />
-    <link href="css/app.css" rel="stylesheet"  nonce="@nonce" />
-    <link href="Blazor7.Bff.Client.styles.css" rel="stylesheet"  nonce="@nonce" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="Blazor7.Bff.Client.styles.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
 </head>
@@ -42,8 +39,8 @@
         <a class="dismiss">🗙</a>
     </div>
 
-    <script src="_framework/blazor.webassembly.js"  nonce="@nonce"></script>
-    <script src="antiForgeryToken.js"  nonce="@nonce"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="antiForgeryToken.js" ></script>
     @Html.AntiForgeryToken()
 </body>
 </html>
