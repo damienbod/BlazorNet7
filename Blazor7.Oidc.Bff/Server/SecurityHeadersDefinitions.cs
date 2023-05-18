@@ -11,7 +11,7 @@ public static class SecurityHeadersDefinitions
             .AddReferrerPolicyStrictOriginWhenCrossOrigin()
             .AddCrossOriginOpenerPolicy(builder => builder.SameOrigin())
             .AddCrossOriginResourcePolicy(builder => builder.SameOrigin())
-            .AddCrossOriginEmbedderPolicy(builder => builder.RequireCorp()) // remove for dev if using hot reload
+            .AddCrossOriginEmbedderPolicy(builder => builder.RequireCorp())
             .AddContentSecurityPolicy(builder =>
             {
                 builder.AddObjectSrc().None();
@@ -29,9 +29,6 @@ public static class SecurityHeadersDefinitions
                     .WithNonce()
                     .WithHash256("ZD0chCyBaNHl+4UwQHJIHGoYhKwMeyCXGgJTKW5/67E=")
                     .UnsafeEval();
-
-                // disable script and style CSP protection if using Blazor hot reload
-                // if using hot reload, DO NOT deploy with an insecure CSP
             })
             .RemoveServerHeader()
             .AddPermissionsPolicy(builder =>
